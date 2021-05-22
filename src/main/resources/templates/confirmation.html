@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeLeaf/layout"
+	layout:decorator="template1">
+<head>
+<meta charset="utf-8">
+<title>Form Patients</title>
+
+</head>
+<body>
+	<div layout:fragment="pageContent">
+
+		<h3></h3>
+
+		<div class="container mt-5"></div>
+
+		<div class="card col-md-7 mx-auto">
+			<div class="card-header text-center font-weight-bold">Engresitrement effectué avec succès</div>
+			<div class="card-body">
+
+				<div class="form-group">
+					<label class="font-weight-bold">&nbsp;ID :&nbsp; &nbsp;&nbsp;</label><label th:text="${patient.id}"></label>
+				</div>
+				<div class="form-group">
+					<label class="font-weight-bold">&nbsp;Name : &nbsp;&nbsp;&nbsp;</label><label th:text="${patient.name}"></label>
+				</div>
+				<div class="form-group">
+					<label class="font-weight-bold">&nbsp;Score :&nbsp;&nbsp;&nbsp; </label><label th:text="${patient.score}"></label>
+				</div>
+				<div class="form-group">
+					<label class="font-weight-bold">&nbsp;Date Naissance :&nbsp;&nbsp;&nbsp; </label><label
+						th:text="${patient.DateNaissance}"></label>
+				</div>
+				<div class="form-group">
+					<label class="font-weight-bold">&nbsp;Malade :&nbsp;&nbsp; &nbsp;</label><label th:text="${patient.malade}"></label>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
